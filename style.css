@@ -1,157 +1,88 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio José Enrique</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(to right, #1e3c72, #2a5298);
-            color: white;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            scroll-behavior: smooth;
-        }
-        .menu {
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            z-index: 1000;
-        }
-        .menu i {
-            color: white;
-            font-size: 1.5em;
-        }
-        .menu-items {
-            display: none;
-            position: fixed;
-            top: 50px;
-            left: 10px;
-            background: rgba(0, 0, 0, 0.9);
-            padding: 10px;
-            border-radius: 5px;
-            text-align: left;
-        }
-        .menu-items a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            margin: 5px 0;
-        }
-        .container {
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-top: 20px;
-            border: 4px solid #a0cfff;
-        }
-        .project {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            text-align: left;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-        .project img {
-            width: 200px;
-            border-radius: 10px;
-            margin-left: 20px;
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #a0cfff;
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: #d1e8ff;
-            border-bottom: 2px solid #a0cfff;
-            padding-bottom: 5px;
-            margin-top: 40px;
-        }
-        p {
-            line-height: 1.8;
-            font-size: 1.1em;
-        }
-        .contacto {
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-    </style>
-</head>
-<body>
-    <div class="menu" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-    </div>
-    <div class="menu-items" id="menuItems">
-        <a href="#sobre-mi">Sobre Mí</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#educacion">Educación</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-    </div>
-    <div class="container">
-        <img src="assets/JEGL.jpg" alt="José Enrique Gallego León" class="profile-img">
-        <h1>José Enrique Gallego León</h1>
-        
-        <div class="section" id="proyectos">
-            <h2>Proyectos</h2>
-            <div class="project">
-                <div>
-                    <h3>PetHome: La red social para tu mascota</h3>
-                    <p>PetHome es una pequeña red social desarrollada en Android con el lenguaje nativo Kotlin. Desarrollada en solo tres meses, la app cuenta con diferentes funciones esenciales para una aplicación de carácter social.</p>
-                    <ul>
-                        <li>Sistema de Registro, Inicio de sesión, Contraseña olvidada</li>
-                        <li>Seguir a otras personas y obtener seguidores</li>
-                        <li>Visualización y publicación de fotos</li>
-                        <li>Sistema de Likes</li>
-                        <li>Personalización de perfil</li>
-                    </ul>
-                </div>
-                <img src="assets/pethome_main.jpg" alt="PetHome App">
-            </div>
-            <div class="project">
-                <img src="assets/pethome_features.jpg" alt="PetHome Funcionalidades">
-                <p>Interfaz intuitiva con funciones clave para la interacción social en una comunidad dedicada a los amantes de las mascotas.</p>
-            </div>
-        </div>
-        
-        <div class="section" id="contacto">
-            <h2>Contacto</h2>
-            <p class="contacto"><i class="fas fa-envelope"></i> Email: <a href="mailto:gallegoleonjoseenrique734@gmail.com">gallegoleonjoseenrique734@gmail.com</a></p>
-            <p class="contacto"><i class="fas fa-phone"></i> Teléfono: <a href="tel:+34674889125">+34 674 889 125</a></p>
-        </div>
-    </div>
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById('menuItems');
-            if (menu.style.display === 'block') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'block';
-            }
-        }
-    </script>
-</body>
-</html>
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+.menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.menu i {
+    color: white;
+    font-size: 1.5em;
+}
+.menu-items {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+.menu-items a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 4px solid #a0cfff;
+}
+h1 {
+    font-size: 2.5em;
+    color: #a0cfff;
+    margin-bottom: 10px;
+}
+h2 {
+    color: #d1e8ff;
+    border-bottom: 2px solid #a0cfff;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+p {
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+.contacto {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.project img {
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
