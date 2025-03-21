@@ -64,6 +64,21 @@
             margin-top: 20px;
             border: 4px solid #a0cfff;
         }
+        .project {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .project img {
+            width: 250px;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
         h1 {
             font-size: 2.5em;
             color: #a0cfff;
@@ -93,30 +108,33 @@
         <a href="#sobre-mi">Sobre Mí</a>
         <a href="#experiencia">Experiencia</a>
         <a href="#educacion">Educación</a>
+        <a href="#proyectos">Proyectos</a>
         <a href="#contacto">Contacto</a>
     </div>
     <div class="container">
         <img src="assets/JEGL.jpg" alt="José Enrique Gallego León" class="profile-img">
         <h1>José Enrique Gallego León</h1>
-        <div class="section" id="sobre-mi">
-            <h2>Sobre Mí</h2>
-            <p>Soy un profesional apasionado por la informática con gran capacidad de adaptación y trabajo en equipo.</p>
-        </div>
-        <div class="section" id="experiencia">
-            <h2>Experiencia Laboral</h2>
-            <p><strong>Programador - Alfinf (2024)</strong></p>
-            <p>Desarrollo de aplicaciones con Visual Basic y Kotlin.</p>
-        </div>
-        <div class="section" id="educacion">
-            <h2>Educación</h2>
-            <p><strong>Desarrollo de Aplicaciones Multiplataformas (DAM)</strong> - I.E.S La Marisma</p>
-            <p><strong>Curso de Especialización en Ciberseguridad</strong> - I.E.S La Marisma</p>
-            <p>Estos estudios me han permitido desarrollar habilidades en <span class="highlight">programación</span>, <span class="highlight">seguridad informática</span> y <span class="highlight">desarrollo de software</span>, fortaleciendo mi perfil profesional.</p>
-        </div>
-        <div class="section" id="contacto">
-            <h2>Contacto</h2>
-            <p class="contacto"><i class="fas fa-envelope"></i> Email: <a href="mailto:gallegoleonjoseenrique734@gmail.com">gallegoleonjoseenrique734@gmail.com</a></p>
-            <p class="contacto"><i class="fas fa-phone"></i> Teléfono: <a href="tel:+34674889125">+34 674 889 125</a></p>
+        
+        <div class="section" id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="project">
+                <div>
+                    <h3>PetHome: La red social para tu mascota</h3>
+                    <p>PetHome es una pequeña red social desarrollada en Android con el lenguaje nativo Kotlin. Desarrollada en solo tres meses, la app cuenta con diferentes funciones esenciales para una aplicación de carácter social.</p>
+                    <ul>
+                        <li>Sistema de Registro, Inicio de sesión, Contraseña olvidada</li>
+                        <li>Seguir a otras personas y obtener seguidores</li>
+                        <li>Visualización y publicación de fotos</li>
+                        <li>Sistema de Likes</li>
+                        <li>Personalización de perfil</li>
+                    </ul>
+                </div>
+                <img src="assets/pethome_main.jpg" alt="PetHome App">
+            </div>
+            <div class="project">
+                <img src="assets/pethome_features.jpg" alt="PetHome Funcionalidades">
+                <p>Interfaz intuitiva con funciones clave para la interacción social en una comunidad dedicada a los amantes de las mascotas.</p>
+            </div>
         </div>
     </div>
     <script>
