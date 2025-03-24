@@ -86,6 +86,13 @@ p {
 }
 
 /* Project Section */
+.project-promo {
+    width: 100%;
+    max-width: 600px; /* Ajusta este valor según el tamaño real de tu imagen */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
 .project {
     display: flex;
     justify-content: space-between;
