@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificaciones - José Enrique</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Hoja de estilos corregida -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Menú hamburguesa -->
+    <div class="menu" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="menu-items" id="menuItems">
+        <a href="/portfolio/index.html#sobre-mi">Sobre Mí</a>
+        <a href="/portfolio/index.html#experiencia">Experiencia</a>
+        <a href="/portfolio/index.html#educacion">Educación</a>
+        <a href="/portfolio/proyects.html#proyectos">Proyectos</a>
+        <a href="#certificaciones">Certificaciones</a>
+        <a href="/portfolio/index.html#contacto">Contacto</a>
+    </div>
 
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h1>Certificaciones</h1>
+        <div class="section" id="certificaciones">
+            <div class="project">
+                <div class="project-info">
+                    <h3>Certificación en Desarrollo Android</h3>
+                    <p>Certificación obtenida tras completar un curso intensivo en desarrollo de aplicaciones móviles usando Kotlin y Android Studio.</p>
+                </div>
+                <div class="project-image">
+                    <img src="../assets/android-certification.png" alt="Certificación Android">
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-info">
+                    <h3>Certificación en Desarrollo Web</h3>
+                    <p>Certificado que acredita competencias en HTML, CSS y JavaScript para el desarrollo de aplicaciones web modernas.</p>
+                </div>
+                <div class="project-image">
+                    <img src="../assets/web-certification.png" alt="Certificación Web">
+                </div>
+            </div>
+            <!-- Puedes agregar más certificaciones aquí siguiendo el mismo formato -->
+        </div>
+    </div>
+
+    <!-- Script para el menú hamburguesa -->
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menuItems');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
