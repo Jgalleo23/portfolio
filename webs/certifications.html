@@ -87,14 +87,10 @@
     </div>
 
     <!-- Script para el menú hamburguesa -->
-    <script>
+     <script>
         function toggleMenu() {
             var menu = document.getElementById('menuItems');
-            if (menu.style.display === 'block') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'block';
-            }
+            menu.classList.toggle('active');
         }
     </script>
 </body>
