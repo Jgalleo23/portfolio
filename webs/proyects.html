@@ -12,18 +12,20 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <!-- Menú hamburguesa -->
-    <div class="menu" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-    </div>
-    <div class="menu-items" id="menuItems">
-        <a href="/portfolio/index.html#sobre-mi">Sobre Mí</a>
-        <a href="/portfolio/index.html#experiencia">Experiencia</a>
-        <a href="/portfolio/index.html#educacion">Educación</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="/portfolio/webs/certifications.html">Certificaciones</a>
-        <a href="/portfolio/index.html#contacto">Contacto</a>
-    </div>
+    <!-- Menú de navegación fijo -->
+    <header class="sticky-header">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="menu-items" id="menuItems">
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#educacion">Educación</a>
+            <a href="/portfolio/webs/proyects.html">Proyectos</a>
+            <a href="/portfolio/webs/certifications.html">Certificaciones</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
 
     <!-- Contenedor principal -->
     <div class="container">
@@ -50,14 +52,10 @@
     </div>
 
     <!-- Script para el menú hamburguesa -->
-    <script>
+     <script>
         function toggleMenu() {
             var menu = document.getElementById('menuItems');
-            if (menu.style.display === 'block') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'block';
-            }
+            menu.classList.toggle('active');
         }
     </script>
 </body>
